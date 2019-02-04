@@ -1,0 +1,11 @@
+onClick={this.likeBlog.bind(this,val)}
+
+
+${val.blog_like_status ? 'thumbs-up-orange' : 'thumbs-up-black'}
+
+
+, {
+            headers: {
+                'Authorization': `Bearer ${this.props.authUser.user.token}`
+            }
+        }
